@@ -1,4 +1,3 @@
-import { SanityImageSource } from "./../sanity/node_modules/@sanity/asset-utils/src/types";
 import ImageUrlBuilder from "@sanity/image-url";
 import { createClient } from "next-sanity";
 
