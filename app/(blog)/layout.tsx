@@ -7,8 +7,9 @@ export const metadata: Metadata = {
     default: "Blogs",
   },
 };
-const layout = ({ children }: { children: React.ReactNode }) => {
+
+const Layout = ({ children }: { children: React.ReactNode }) => {
   return <>{children}</>;
 };
 
-export default layout;
+export default Layout;
