@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 // Fetch user data from Sanity
+export const revalidate = 30;
 async function getUserData() {
   const query = `*[_type=="blog"] | order(_createdAt desc){
   title, titleImage, smallDescription, "currentSlug": slug.current,
@@ -14,7 +15,6 @@ async function getUserData() {
   const data: simpleBlogCard[] = await client.fetch(query);
   return data;
 }
-
 // Home component
 export default async function Home() {
   const data = await getUserData();

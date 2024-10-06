@@ -11,6 +11,8 @@ interface pageProps {
   };
 }
 
+export const revalidate = 30;
+
 async function getUserData(slug: string) {
   const query = `*[_type=="blog" && slug.current =="${slug}"]{
   "currentSlug":slug.current,
