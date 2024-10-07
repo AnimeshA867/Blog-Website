@@ -62,10 +62,10 @@ const SearchComponent: FC<SearchComponentProps> = ({ results }) => {
         )}
         {results?.map((item, idx) => (
           <Card key={idx}>
-            <div className="flex md:flex-row flex-col w-full h-full ">
-              <div className="md:w-1/5 w-full bg-blue-400 h-auto aspect-square relative">
+            <div className="flex md:flex-row flex-col w-full h-full space-y-8  ">
+              <div className="md:w-1/5 w-full  h-auto aspect-square relative">
                 <Image
-                  className="rounded-lg object-cover object-center"
+                  className="rounded-none object-cover object-center"
                   fill
                   referrerPolicy="no-referrer"
                   src={urlFor(item.titleImage)?.url() || ""}
