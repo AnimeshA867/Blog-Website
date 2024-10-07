@@ -18,9 +18,8 @@ async function getUserData() {
 // Home component
 export default async function Home() {
   const data = await getUserData();
-  console.log(data);
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 xxl:grid-cols-4 gap-4 lg:grid-cols-3">
+    <section className="grid grid-cols-1 md:grid-cols-2 xxl:grid-cols-4 gap-4 lg:grid-cols-3">
       {data.map((item, idx) => (
         <Card key={idx}>
           <div className="relative w-full aspect-square ">
@@ -46,6 +45,6 @@ export default async function Home() {
           </CardFooter>
         </Card>
       ))}
-    </div>
+    </section>
   );
 }
