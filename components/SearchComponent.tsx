@@ -35,7 +35,7 @@ const SearchComponent: FC<SearchComponentProps> = ({ results }) => {
     <section className="w-full h-full min-h-screen flex items-center space-y-8 flex-col">
       <div className="w-full flex h-10 space-x-2">
         <Input
-          className="w-[4/5] md:w-[90%] h-full md:text-lg text-md"
+          className="w-4/5 md:w-[90%] h-full md:text-lg text-md"
           value={input}
           placeholder="Search"
           onChange={(e) => setInput(e.target.value)}
@@ -62,8 +62,8 @@ const SearchComponent: FC<SearchComponentProps> = ({ results }) => {
         )}
         {results?.map((item, idx) => (
           <Card key={idx}>
-            <div className="flex flex-row w-full h-full">
-              <div className="w-1/5 bg-blue-400 h-auto aspect-square relative">
+            <div className="flex md:flex-row flex-col w-full h-full ">
+              <div className="md:w-1/5 w-full bg-blue-400 h-auto aspect-square relative">
                 <Image
                   className="rounded-lg object-cover object-center"
                   fill
@@ -72,12 +72,12 @@ const SearchComponent: FC<SearchComponentProps> = ({ results }) => {
                   alt={item.title}
                 />
               </div>
-              <div className="w-4/5">
+              <div className="md:w-4/5 w-full">
                 <CardHeader>
                   <CardTitle>{item.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="prose max-w-full dark:prose-invert">
+                  <p className="prose max-w-full dark:prose-invert line-clamp-3 ">
                     {item.smallDescription}
                   </p>
                 </CardContent>
