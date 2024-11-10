@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Blog Website
+
+A responsive and modern blog website built with Next.js, TypeScript, and styled components. This project showcases a clean and functional design with features such as post previews, navigation, and easy-to-read typography.
+
+## Features
+
+- **Dynamic Content**: Fetches blog posts from a backend or headless CMS.
+- **Responsive Design**: Optimized for all screen sizes (desktop, tablet, and mobile).
+- **SEO-Friendly**: Uses meta tags, open graph tags, and dynamic page titles to improve search engine visibility.
+- **Page Transitions**: Smooth transitions using Framer Motion for an enhanced user experience.
+- **Theming**: Light and dark mode support for user preference.
+
+## Tech Stack
+
+- **Frontend**: [Next.js](https://nextjs.org/), [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: CSS Modules, styled-components
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Data Handling**: Headless CMS (Sanity, Contentful, or similar) or local markdown files
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- **Node.js** (v14+)
+- **Yarn** (or npm)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/AnimeshA867/Blog-Website.git
+   cd Blog-Website
+	```
+2. Install dependencies:
 ```bash
-npm run dev
-# or
+    yarn install
+    # or
+    npm install
+```
+3. Configure environment variables (e.g., for CMS API keys) if required. See .env.example for reference.
+
+### Running the Project
+
+To start the development server:
+```bash
 yarn dev
 # or
-pnpm dev
-# or
-bun dev
+npm run dev
 ```
+This will run the website on http://localhost:3000.
+### Building for Production
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To build the project for production:
+```bash
+yarn build
+# or
+npm run build
+```
+After building, you can start the production server:
+```bash
+yarn start
+# or
+npm start
+```
+## Project Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `pages/`: Contains the main pages of the website, including blog pages and static pages.
+- `components/`: Reusable UI components (Navbar, Footer, etc.).
+- `lib/`: Utility functions, helpers, and hooks.
+- `public/`: Static assets like images and icons.
+- `styles/`: Global and component-specific styles.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contributing
 
-## Learn More
+Contributions are welcome! Please feel free to submit a pull request or open an issue to discuss improvements or bugs.
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Created by [Animesh Acharya](https://animeshacharya.com.np).
