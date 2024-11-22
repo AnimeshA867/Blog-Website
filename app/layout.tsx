@@ -34,6 +34,17 @@ export const metadata: Metadata = {
     "tailwind",
     "beginner",
     "simpleblog",
+    "AnimeshBlog",
+    "animeshblog",
+    "Animesh's Blog",
+    "animesh's blog",
+    "animesh blog",
+    "animesh",
+    "animesh acharya",
+    "animesh blog",
+    "animesh acharya",
+    "animesh acharya blog",
+    "animesh acharya's blog",
   ],
 };
 
